@@ -1,0 +1,1 @@
+init: python application.py
