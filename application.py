@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+import os
 from flask import render_template
 from flask import Flask
 from flask import url_for
@@ -74,5 +75,4 @@ def dna2t_src():
     return render_template('dna2t_src.html', source=True, title="Code de conversion d'ADN vers texte")
 
 if __name__ == '__main__':
-    app.debug = True
-    app.run()
+    app.run(port = int(os.environ.get('PORT', 33507)))
