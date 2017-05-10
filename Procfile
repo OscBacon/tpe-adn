@@ -1,2 +1,1 @@
-init: python application.py
-web: python appliation.py
+web gunicorn application:app
