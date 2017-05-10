@@ -1,0 +1,104 @@
+{% extends "template.html" %} {% block body %}
+<div class="section" id="entree">
+	<div class="container">
+		<h1 class="h1">Introduction</h1>
+		<p>
+			En 2016, le monde a besoin d’un nouveau support de stockage car le volume de données numériques générées par nos sociétés ne cesse d'augmenter. Les supports traditionnels (CD, DVD, disques durs) ne suffisent plus pour contenir un aussi grand nombre de
+			données et ne sont pas assez fiables car ils se révèlent fragiles et de courte durée de vie. Les scientifiques travaillent sur plusieurs pistes de recherches qui pourraient mener à la réalisation de supports durables.
+			<br> Ce site internet propose une alternative pour éviter à notre époque de perdre sa mémoire : la molécule d’ADN. Un support de stockage qui pourrait contenir un nombre d’informations et une durée de vie plus grand que n’importe qu’elle autre support
+			de stockage.
+		</p>
+	</div>
+</div>
+<div class="section" id="prob">
+	<div class="container">
+		<h1 class="h1">Problématique</h1>
+		<blockquote>
+			<h2 style="font-family:'Lobster';" class="h2">
+	 "Quel est l’intérêt de stocker de l’information sur une molécule d'ADN ? Et comment réaliser cet exploit ?"</h2>
+		</blockquote>
+	</div>
+</div>
+<div class="section" id="gene">
+	<div class="container">
+		<h1 class="h1">
+				Généralisation du TPE
+			</h1>
+		<p>L’utilisation de la molécule d’ADN pour stocker de l’information, un élément de connaissance (voix, donnée, image), se ferait en deux parties. Dans un premier temps, à partir d’un programme informatique python (ci dessous), on pourrait traduire un texte
+			en une séquence nucléotidique. À partir de cette séquence, on se servirait des avancées technologiques des scientifiques pour créer de l’ADN artificiel que l’on stockera au froid et au sec pour ne pas l’endommager. Dans un second temps, pour pouvoir
+			récupérer l’information stocker dans l’ADN artificiel, on utiliserait un outil appelé le « MinION » une nouvelle méthode pour séquencer l’ADN. Avec un autre programme informatique que nous avons codé en Python (ci-dessous), on traduirait cette séquence
+			nucléotidique en texte initial. La molécule d’ADN pourrait être un support de stockage valide. Nous verrons par la suite ses avantages par rapport aux autres supports de stockage existant. </p>
+		<div class="thumbnail">
+			<img src="{{ url_for('static', filename='img/gene.png') }}" class="img-responsive schema img-thumbnail" style="margin:0" />
+			<div class="caption">
+				<h3>Schéma de conversion de la lettre « a » en une molécule d'ADN et lecture de cette molécule</h3>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="section" id="programs">
+	<div class="container">
+		<h1>Nos Programmes Python</h1> {% if text %}
+		<div class="alert alert-success alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			Votre texte a été converti ! A présent, copiez-collez le résultat dans la partie de droite pour voir ce qui se passe
+		</div>
+		<div class="alert alert-info alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<strong>Hé!</strong> N'hésitez pas à insérer des mutations dans la séquence (mais pas plus de d'une par groupe de quatre!)
+		</div>
+
+		{% endif %} {% if not text %}
+		<div class="alert alert-warning alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+			<strong>Attention!</strong> Il faut que votre séquence contienne au moins une lettre pour marcher
+		</div>
+		{% endif %}
+		<div class="row">
+			<div class="col-md-6">
+				<h3>Convertissez du texte en ADN</h3>
+				<form role="form" action="#result" method="POST">
+					<div class="input-group">
+						<label class="control-label" for="exampleInputEmail1" contenteditable="true"></label>
+						<input class="form-control" id="exampleInputEmail1" placeholder="Texte à transcrire en ADN" type="text" name="text" required>
+						<span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" value="Send">Submit</button>
+                </span>
+					</div>
+				</form>
+				<br>
+				<a type="button" href="t2dna_src.html" class="btn btn-warning center-block" style="width: inherit;">Voir le code</a>
+			</div>
+			<div class="col-md-6">
+				<h3>Convertissez votre séquence en texte</h3>
+				<form role="form" action="#result" method="POST">
+					<div class="input-group">
+						<label class="control-label" for="exampleInputPassword1"></label>
+						<input class="form-control" id="exampleInputPassword1" title="Ceci doit être une séquence de nucléotides" placeholder="ADN à transcrire en texte" type="text" name="dna" pattern="[ATGCatgc ]{1,}" required>
+						<span class="input-group-btn">
+                  <button type="submit" class="btn btn-default" value="Send">Submit</button>
+                </span>
+					</div>
+				</form>
+				<br>
+				<a type="button" href="dna2t_src.html" class="btn btn-warning center-block" style="width: inherit;">Voir le code</a>
+			</div>
+		</div>
+		<div class="row" id="result">
+
+			{% if text %}
+			<h1 class="h1">Conversion de la donnée « {{ text }} » en nucléotides :</h1>
+			<p>
+				{{ processed_text }}
+			</p>
+			{% endif %} {% if dna %}
+			<h1 class="h1">Conversion de la séquence en donnée :</h1>
+			<p>
+				{{ processed_dna }}
+			</p>
+			{% endif %}
+			<br />
+		</div>
+	</div>
+</div>
+{% endblock %}

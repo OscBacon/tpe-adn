@@ -1,0 +1,119 @@
+{% extends "template.html" %} {% block body %}
+<div class="section" id="modes">
+	<div class="container">
+		<h1 class="h1">Modes de stockage actuel: CD, Clé USB, Disque Dur</h1>
+		<div class="row">
+			<div class="col-md-4">
+				<h2 style="text-align:center">Clé USB</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<img class="img-responsive schema img-thumbnail" src="{{ url_for('static', filename='img/usbkey.jpg') }}" alt="">
+			</div>
+			<div class="col-md-8">
+				<ul class="custom">
+					<li>Définition : La clé USB est un support qui permet de stocker facilement des fichiers à partir de tout système disposant de prises USB. La clé USB permet de transférer des données entre ordinateur. </li>
+					<li>Capacité de stockage maximum : 256 Go (Giga-octet) </li>
+					<li>Durée de vie : la clé USB fonctionne par cycle d’écriture ou d’effacement. Elles peuvent durer jusqu’à 10.000 à 100.000 cycles d’écritures et d’effacements</li>
+					<li>Avantage : Comme la Clé USB se branche et se débranche à l'envie sur le port USB d'un ordinateur elle est donc aisément transportable</li>
+					<li>Désavantage : La Clé USB peut se perdre facilement à cause de sa taille et peut être détruite au contact de l’eau</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<h2 style="text-align:center">Disque Dur</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<img class="img-responsive schema img-thumbnail" src="{{ url_for('static', filename='img/hdd.jpg') }}" alt="">
+			</div>
+			<div class="col-md-8">
+				<ul class="custom">
+					<li>Définition : On appelle le disque dur, un support de stockage qui est une mémoire de masse magnétique que l’on utilise principalement dans les ordinateurs</li>
+					<li>Capacité : 10 To (Tera-octet) </li>
+					<li>Durée de vie : 5 ans</li>
+					<li>Avantage : Ce support fonctionne de façon autonome donc il n’y a pas de risque de perte des données si l’ordinateur tombe en panne</li>
+					<li>Désavantage : Pas pratique pour transporter et partager des données</li>
+				</ul>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<h2 style="text-align:center">CD-ROM</h2>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-4">
+				<img class="img-responsive schema img-thumbnail" src="{{ url_for('static', filename='img/cd.png') }}" alt="">
+			</div>
+			<div class="col-md-8">
+				<ul class="custom">
+					<li>Définition : Un CD-ROM qui est l’acronyme de <i>Compact Disc - Read Only Memory</i> est un disque optique que l’on utilise pour stocker des données sous une forme numérique qui doivent être lues par un ordinateur ou un lecteur compatible</li>
+					<li>Capacité de stockage maximum : 650-700 Mo (Méga-octet)</li>
+					<li>Durée de vie maximum : 5-10 ans</li>
+					<li>Avantage : On peut se déplacer sur le disque dur et sur les fichiers</li>
+					<li>Désavantage : Le CD-ROM ne contient que des données non modifiables et ne peut être écrit que par un graveur. De plus, il y a de moins en moins d’ordinateurs aujourd’hui qui permettent de lire les CD-ROM. Enfin, il suffit de les rayer pour détruire
+						leurs données et les rendre non-fonctionnelles</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="section" id="int">
+	<div class="container">
+
+		<h1 class="h1">L'intérêt de la molécule d'ADN</h1>
+		<!--<img src="{{ url_for('static', filename='img/schema-adn.jpg') }}" style="margin: 0.5em;" class="img-responsive pull-right schema">-->
+		<div class="row">
+			<div class="col-md-8">
+				<p>
+					La molécule d’ADN serait un support de stockage idéal pour plusieurs raisons. Premièrement, on retrouve un aspect proche de la science-fiction et de l’impossibilité de stocker des informations (image, audio, vidéo) dans une molécule du vivant. De plus, contrairement
+					aux différents supports de stockage qui disparaitront au fil des années, la molécule d’ADN sera étudiée tout au long de l’existence des humains sur Terre car c’est une source infinie de recherches par l’homme lui-même.
+				</p>
+				<p>
+					Enfin, la molécule d’ADN peut être considérée comme un support idéal par sa taille et son volume. Dans la molécule d’ADN, on descend à l’échelle moléculaire.
+				</p>
+				<h2>Calcul des dimensions d'une molécule d'ADN</h2>
+				<div class="table-responsive">
+					<table class="table table-bordered">
+						<tbody>
+							<tr>
+								<td class="info" style="width:50%">A / T</td>
+								<td>1,11 nm</td>
+							</tr>
+							<tr>
+								<td class="info">G / C</td>
+								<td>1,08 nm</td>
+							</tr>
+							<tr>
+								<td class="info">La distance entre 2 bases</td>
+								<td>0,34 nm</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				<p>
+					Largeur moyenne de la molécule d’ADN = (1,11 + 1,08)/2 = 1,095 nm
+					<br />
+					<br />
+					<i>Soit x le nombre de nucléotides de la séquence d’ADN</i>
+					<br /> Longueur de la molécule d’ADN = (x - 1) * 0,34 nm
+					<br />
+
+				</p>
+			</div>
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<img src="{{ url_for('static', filename='img/schema-adn.jpg') }}" style="width:100%" class="img-responsive schema img-thumbnail">
+					<div class="caption">
+						<h3>Schéma des dimensions d'un molécule d'ADN</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

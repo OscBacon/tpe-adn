@@ -1,0 +1,127 @@
+{% extends "template.html" %} {% block body %}
+<div class="section" id="crc">
+	<div class="container">
+		<h1 class="h1">De l’information en binaire avec l’ajout d’un code correcteur</h1>
+		<p>
+			Afin de traduire l’information en séquence nucléotidique, on doit passer par le langage binaire. Dans un premier temps, via le programme Python, nous pouvons traduire n’importe quelle information incluse dans la norme ASCII en une séquence binaire. Prenons
+			pour exemple l’information « a ». Le programme python nous informe que sa séquence binaire est <code>01100001</code>. Dans un second temps, nous avons décidé d'ajouter un Cyclic Redundancy Check (CRC), un code détecteur d’erreur afin de limiter
+			le nombre d’erreurs dans la séquence. Nous avons élaboré ce système de correction à partir du code de Hamming. Ce système de correction est fiable en supposant qu’il ne contient pas plus d’une erreur dans un groupe de 4 bits. On attribue à la lettre
+			D la signification Data (Données) et à la lettre P la signification Parity (Bit de Parité). À partir d’une séquence binaire de 8 bits (octect), on divise cette séquence en deux parties égales. Les 4 premiers bits de la séquence seraient respectivement
+			<code>D1</code>, <code>D2</code>, <code>D3</code>,
+			<code>D4</code>. Les 4 derniers bits de la séquence seraient respectivement <code>D’1</code>, <code>D’2</code>, <code>D’3</code>, <code>D’4</code>. La règle de parité est le fait de déterminer si un élément est ou non un multiple de 2. Un entier multiple
+			de deux est un entier pair et un entier qui n’est pas un multiple de deux est un entier impair. Ainsi, la somme de trois « D » est égale à un P et ce P est égale à 0 si elle est paire et à 1 si elle est impaire (voir l'équation ci-contre). Prenons
+			pour exemple la séquence binaire de l’information « a ». À partir du tableau ci-dessous et des diagrammes de Venn, on peut établir une séquence d’ADN comprenant une sécurité pour un nombre limité d’erreur qui serait : <code>0000111001101001</code>.
+		</p>
+		<div class="row">
+			<div class="col-md-6">
+				<div class="thumbnail">
+					<img src="{{ url_for('static', filename='img/cir-dp.svg') }}" class="img-responsive schema img-thumbnail" style="margin:0" />
+					<div class="caption">
+						<h3>Schéma de la redondance correctrice générale</h3>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-6">
+				<div class="thumbnail">
+					<img src="{{ url_for('static', filename='img/cir-bin.svg') }}" class="img-responsive schema img-thumbnail" style="margin:0" />
+					<div class="caption">
+						<h3>Exemple d’application de la redondance correctrice via l’information « a »</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+		<h2>Calculs pour déterminer les Parity bits</h2>
+		<div class="row">
+			<div class="col-md-8 col-md-offset-2">
+				<img style="text-align:center; -webkit-filter: invert(100%); margin:0.5em; width:100%" src="{{ url_for('static', filename='img/p1.svg') }}" border="0" />
+				<img style="text-align:center; -webkit-filter: invert(100%); margin:0.5em; width:100%" src="{{ url_for('static', filename='img/p2.svg') }}" border="0" />
+				<img style="text-align:center; -webkit-filter: invert(100%); margin:0.5em; width:100%" src="{{ url_for('static', filename='img/p3.svg') }}" border="0" />
+				<img style="text-align:center; -webkit-filter: invert(100%); margin:0.5em; width:100%" src="{{ url_for('static', filename='img/p4.svg') }}" border="0" />
+			</div>
+		</div>
+		<h2>Ce qui nous donne pour « a »</h2>
+		<div class="table-responsive">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<td class="info">P1</td>
+						<td class="warning">P’1</td>
+						<td class="info">D1</td>
+						<td class="warning">D’1</td>
+						<td class="info">P2</td>
+						<td class="warning">P’2</td>
+						<td class="info">D2</td>
+						<td class="warning">D’2</td>
+						<td class="info">P3</td>
+						<td class="warning">P’3</td>
+						<td class="info">D3</td>
+						<td class="warning">D’3</td>
+						<td class="info">P4</td>
+						<td class="warning">P’4</td>
+						<td class="info">D4</td>
+						<td class="warning">D’4</td>
+					</tr>
+				</thead>
+				<tr>
+					<td class="info">0</td>
+					<td class="warning">0</td>
+					<td class="info">0</td>
+					<td class="warning">0</td>
+					<td class="info">1</td>
+					<td class="warning">1</td>
+					<td class="info">1</td>
+					<td class="warning">0</td>
+					<td class="info">0</td>
+					<td class="warning">1</td>
+					<td class="info">1</td>
+					<td class="warning">0</td>
+					<td class="info">1</td>
+					<td class="warning">0</td>
+					<td class="info">0</td>
+					<td class="warning">1</td>
+				</tr>
+				<tr>
+					<td></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</div>
+<div class="section" id="bin">
+	<div class="container">
+		<h1 class="h1">Du binaire à l’ADN</h1>
+		<div class="row">
+			<div class="col-md-6">
+				<p>
+					Avec l’ajout du code correcteur d’erreur, notre séquence binaire est égale à <code>P1-P’1-D1-D’1-P2-P’2-D2-D’2-P3-P’3-D3-D’3-P4-P’4-D4-D’4</code>. Si l’on prend pour exemple la séquence de l’information « a », en ajoutant le code correcteur d’erreur
+					cela donne <code>0000111001101001</code>. À partir du tableau explicatif du codage binaire des nucléotides (Voir Section : <a style="text-decoration: none !important; color:#0ce3ac" href="math.html#lien">Lien entre les deux</a>), on peut traduire
+					cette séquence binaire en une séquence nucléotidique qui est : <code>AACGTGGT</code>. Grâce à cette séquence, on peut faire la synthèse de la molécule d’ADN artificielle de l’information « a ». Cet ADN sera stocké dans un milieu froid et il sera
+					placé dans un milieu sec comme un solide pour limiter toute mutation de la séquence nucléotidique.
+				</p>
+			</div>
+			<div class="col-md-6">
+				<div class="thumbnail">
+					<img src="{{ url_for('static', filename='img/dna.gif') }}" class="img-responsive schema img-thumbnail" style="margin:0" />
+					<div class="caption">
+						<h3>Représentation de la molécule d'ADN pour la séquence de l'information « a » (avec <span style="color: red;">A</span>, <span style="color: gold;">T</span>, <span style="color: #00FFFF">G</span>, <span style="color: yellow">C</span>)</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<div class="thumbnail">
+					<img src="{{ url_for('static', filename='img/t2dna.svg') }}" class="img-responsive schema img-thumbnail" style="margin:0" />
+					<div class="caption">
+						<h3>Schéma de la traduction de l’information « a » en une séquence nucléotidique</h3>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

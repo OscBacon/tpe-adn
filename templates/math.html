@@ -1,0 +1,176 @@
+{% extends "template.html" %} {% block body %}
+<div class="section" id="adn">
+	<div class="container">
+		<h1 class="h1">La molécule d'ADN</h1>
+		<h2><i>Introduction</i></h2>
+		<p>
+			L’ADN est une macromolécule présente chez tous les êtres vivants qu’ils soient Procaryotes ou Eucaryotes.
+			<br /> C’est l’information génétique.
+		</p>
+		<h2>I-	L’ADN EST UNE MOLÉCULE UNIVERSELLE</h2>
+		<ul style="list-style-type:none">
+			<li>
+				<h3>A- L’ADN EST LE SUPPORT DE L’INFORMATION GÉNÉTIQUE</h3>
+				<p>
+					D’après les expériences de transgénèse, lorsque le gène d’un donneur est introduit chez un receveur, un nouveau caractère apparaît toujours. Il prend la forme d’une nouvelle molécule (protéines) qui n’existait pas avant l’expérience, chez le receveur.
+					La nouvelle molécule est fabriquée d’après l’information génétique du gène transféré.
+					<br /> Nous savons que le gène est de l’ADN donc on en déduit que l’ADN est bien le support de l’information génétique.
+				</p>
+			</li>
+			<li>
+				<h3>B- LE SUPPORT EST UNIVERSEL</h3>
+				<p>
+					Les expériences de transgénèse prouvent que n’importe quel individu Procaryote ou Eucaryote, animal ou végétal (receveur) peut intégrer un gène de n’importe quel individu Procaryote ou Eucaryote, animal ou végétal (donneur).
+					<br /> On en déduit que l’information génétique de la molécule d’ADN est inscrite dans un langage universel.
+				</p>
+			</li>
+		</ul>
+		<h2>
+	II-	LA STRUCTURE DE LA MOLÉCULE D’ADN
+</h2>
+<div class="row">
+	<div class="col-md-5">
+		<div class="thumbnail">
+	<img src="{{ url_for('static', filename='img/dna-comp.gif') }}" style="margin: 0.5em;" class="img-responsive img-thumbnail pull-left">
+	<div class="caption">
+		<h3>Schéma de la structure d'une molécule d'ADN</h3>
+	</div>
+</div>
+	</div>
+	<div class="col-md-7">
+
+		<ul class="custom">
+			<li>
+				La molécule d’ADN est constituée de deux chaînes (ou brins) parallèles, enroulés l’une autour de l’autre en double hélice. </li>
+			<li>Chaque chaîne est composée d’un long enchaînement de nucléotides.</li>
+			<li>Dans la nature, il existe quatre nucléotides différents : nucléotides à adénine (A), nucléotides à thymine (T), nucléotides à guanine (G) et nucléotides à cytosine (C).</li>
+			<li>Les deux chaînes sont face à face et reliées entre elles par les nucléotides. Ils s’associent deux à deux, respectant une règle de complémentarité : un nucléotide à adénine s’associe à un nucléotide à thymine et un nucléotide à guanine s’associe à
+				un nucléotide à cytosine.</li>
+		</ul>
+	</div>
+</div>
+		<h2>III- L’ADN EST UNE MOLÉCULE CODÉE</h2>
+		<ul class="custom">
+			<li>La comparaison de deux molécules d’ADN révèle que l’enchaînement des nucléotides n’est pas le même chez un individu normal et chez un individu atteint de la maladie thalassémie. On en déduit que l’information génétique est un nombre précis de nucléotides
+				dans un ordre précis, c’est à dire une séquence particulière.</li>
+			<li>Deux espèces différentes (Homme et Bactérie) possèdent des séquences différentes de nucléotides correspondant à des informations différentes.</li>
+		</ul>
+		<hr class="featurette-divider">
+	</div>
+</div>
+<div class="section" id="bin">
+	<div class="container">
+		<h1 class="h1">Le langage binaire</h1>
+		<p>
+			Tous les jours, les humains travaillent avec un langage décimal allant de 0 à 10 contrairement aux machines qui elles travaillent avec un langage binaire allant de 0 à 1. On appelle les <code>0</code> et les <code>1</code> des « bits » qui sont les
+			quantités minimales d’informations transmises par un message. Chaque bit représente une puissance de 2. L’origine de ce langage prend sa source avec l’utilisation des contacteurs d’électricité : on note <code>0</code> pour <code>Faux</code> (si le
+			courant ne passe pas) et on note <code>1</code> pour <code>Vrai</code> (si le courant passe).
+		</p>
+		<p>
+			On appelle l’octet un ensemble de 8 bits. Il permet aux ordinateurs de stocker des nombres qui peuvent aller jusqu’à 255 car il permet d’avoir et donc 256 possibilité.
+		</p>
+		<p>
+			Pour pouvoir utiliser et traduire ces nombres allant de 0 à 255, on utilise une norme informatique appelée ASCII (Code Américain normalisé pour l’échange d’information). Cette norme contient l’ensemble des caractères alphanumérique utilisé en anglais.
+			L’ASCII est codé sous 8 bits permettant d’avoir accès à plus de caractère spéciaux comme les accents.
+
+		</p>
+		<div class="section">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<h1>Le binaire, comment ça marche?</h1></div>
+				</div>
+			</div>
+		</div>
+		<div class="row">
+			<div class="thumbnail">
+				<div class="row">
+
+				<div class="col-md-6">
+					<img src="{{ url_for('static', filename='img/table-bin.svg') }}" class="img-responsive img-thumbnail schema">
+				</div>
+				<div class="col-md-6">
+					<img src="{{ url_for('static', filename='img/table-bin-exp.svg') }}" class="img-responsive img-thumbnail schema">
+				</div>
+			</div>
+			<div class="caption">
+			<h3>Schémas explicatifs du langage binaire à partir de l’information « a » </h3>
+		</div>
+	</div>
+		</div>
+		<div class="row">
+			<div class="col-md-6">
+				<p>Dans le premier schéma, nous expliquons la structure d’une séquence binaire et nous utilisons une séquence huit bits qui est <code>01100001</code>. Au dessus de chaque nombre en vert, nous avons placé une succession de 2 à la puissance n (croissant
+					de la droite vers la gauche), et en dessous de chaque nombre vert, nous avons placé le nombre correspondant de 2 à la puissance n. Chaque nombre vert, que ce soit un <code>0</code> ou un <code>1</code>, est associé à un 2 à la puissance n.</p>
+			</div>
+			<div class="col-md-6">
+				<p>Dans le second schéma, nous expliquons comment tirer l’information de la séquence binaire. Pour trouver l’information que cache cette séquence, nous devons additionner les valeurs placées en dessous des <code>1</code>. Dans ce cas nous additionnons
+					la valeur du premier <code>1</code> donc 1 ; la valeur du sixième <code>1</code> donc 32 ; la valeur du septième <code>1</code> donc 64. L’addition de toutes ces valeurs est égale à « 64+32+1= 97 ». À partir du répertoire ASCII, nous pouvons associer
+					la valeur décimale « 97 » à la lettre minuscule « a ».</p>
+			</div>
+		</div>
+		<div class="row">
+			<div class="col-md-10 col-md-offset-1">
+				<div class="thumbnail">
+			<img src="{{ url_for('static', filename='img/table-ascii.png') }}" class="img-responsive img-thumbnail center-block">
+			<div class="caption">
+				<h3>Tableau explicatif des 255 caractères ASCII</h3>
+			</div>
+		</div>
+			</div>
+		</div>
+		<hr class="featurette-divider">
+	</div>
+</div>
+<div class="section" id="lien">
+	<div class="container">
+		<h1 class="h1">Lien entre les deux</h1>
+		<div class="row">
+			<div class="col-md-8">
+				<p>
+					Comme nous l’avons vu précédemment, la molécule d’ADN possède une séquence nucléotidique précise composée de 4 nucléotides différents : Adénine, Thymine, Guanine et Cytosine. De plus, un octet est une séquence de 8 bits dans un ordre précis composée de
+					<code>0</code> et <code>1</code>. Nous avons donc fait le rapprochement entre ces deux types de séquences et avons chercher un lien. Dans un premier temps, nous avons imaginé un lien entre l’ADN et le langage binaire en attribuant au bit <code>0</code>					les bases azotées Adénine et Thymine car elles sont complémentaires, et en attribuant au bit <code>1</code> les bases azotées Guanine et Cytosine car elles sont également complémentaires. Puis, après réflexion nous avons compris qu’en attribuant
+					à un <code>00</code> l’Adénine, à un <code>01</code> la Thymine, à un <code>10</code> la Guanine et à un <code>11</code> la Cytosine, nous gagnons alors le double de place de stockage. Le tableau ci-contre sert donc à faire un lien précis entre les
+					nucléotides et le langage binaire.
+				</p>
+			</div>
+			<div class="col-md-4">
+				<div class="thumbnail">
+					<div class="table-responsive">
+						<table class="table table-hover table-striped table-bordered" style="height:100%">
+							<thead>
+								<tr class="info">
+									<th>Nucléotides</th>
+									<th>Binaire</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>A</td>
+									<td>00</td>
+								</tr>
+								<tr>
+									<td>T</td>
+									<td>01</td>
+								</tr>
+								<tr>
+									<td>G</td>
+									<td>10</td>
+								</tr>
+								<tr>
+									<td>C</td>
+									<td>11</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+
+			<div class="caption">
+				<h3>Tableau explicatif du Codage binaire des nucléotides</h3>
+			</div>
+		</div>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

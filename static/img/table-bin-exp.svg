@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 2551.2 1700.8" style="enable-background:new 0 0 2551.2 1700.8;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#67B32E;}
+	.st1{font-family:'Consolas';}
+	.st2{font-size:250px;}
+	.st3{fill:none;}
+	.st4{font-size:100px;}
+	.st5{font-size:58.3px;}
+	.st6{fill:none;stroke:#000000;stroke-width:5;stroke-miterlimit:10;}
+	.st7{fill:#E62A38;}
+	.st8{font-size:87.45px;}
+	.st9{fill:none;stroke:#000000;stroke-width:14;stroke-miterlimit:10;}
+	.st10{fill:none;stroke:#000000;stroke-width:4;stroke-miterlimit:10;}
+	.st11{fill:none;stroke:#000000;stroke-width:8;stroke-miterlimit:10;}
+	.st12{font-size:95px;}
+</style>
+<text transform="matrix(1 0 0 1 228.8049 955.1461)" class="st0 st1 st2">0 1 1 0 0 0 0 1</text>
+<rect x="2156.9" y="1068.6" class="st3" width="139" height="109.8"/>
+<text transform="matrix(1 0 0 1 2198.8748 1137.5601)" class="st1 st4">1</text>
+<rect x="1894.7" y="1068.6" class="st3" width="139" height="109.8"/>
+<text transform="matrix(1 0 0 1 1936.6796 1137.5601)" class="st1 st4">2</text>
+<rect x="1603.1" y="1068.6" class="st3" width="139" height="109.8"/>
+<text transform="matrix(1 0 0 1 1645.1368 1137.5601)" class="st1 st4">4</text>
+<rect x="1332.3" y="1068.6" class="st3" width="139" height="109.8"/>
+<text transform="matrix(1 0 0 1 1374.3259 1137.5601)" class="st1 st4">8</text>
+<rect x="1051.7" y="1068.6" class="st3" width="139" height="109.8"/>
+<text transform="matrix(1 0 0 1 1066.1893 1137.5601)" class="st1 st4">16</text>
+<rect x="770" y="1068.6" class="st3" width="139" height="109.8"/>
+<text transform="matrix(1 0 0 1 784.4821 1137.5601)" class="st1 st4">32</text>
+<rect x="509.9" y="1068.6" class="st3" width="139" height="109.8"/>
+<text transform="matrix(1 0 0 1 524.4088 1137.5601)" class="st1 st4">64</text>
+<rect x="219" y="1068.6" class="st3" width="139" height="109.8"/>
+<rect x="126.4" y="1068.6" class="st3" width="324.4" height="122"/>
+<text transform="matrix(1 0 0 1 206.09 1137.5605)" class="st1 st4">128</text>
+<rect x="2158.1" y="578.3" class="st3" width="146.3" height="163.4"/>
+<text transform="matrix(1 0 0 1 2187.7275 647.3154)" class="st1 st4">2</text>
+<text transform="matrix(1 0 0 1 2242.708 614.0156)" class="st1 st5">0</text>
+<rect x="1891" y="578.3" class="st3" width="146.3" height="163.4"/>
+<text transform="matrix(1 0 0 1 1920.6543 647.3154)" class="st1 st4">2</text>
+<text transform="matrix(1 0 0 1 1975.6348 614.0156)" class="st1 st5">1</text>
+<rect x="1599.5" y="578.3" class="st3" width="146.3" height="163.4"/>
+<text transform="matrix(1 0 0 1 1629.1116 647.3154)" class="st1 st4">2</text>
+<text transform="matrix(1 0 0 1 1684.0918 614.0156)" class="st1 st5">2</text>
+<rect x="1328.6" y="578.3" class="st3" width="146.3" height="163.4"/>
+<text transform="matrix(1 0 0 1 1358.3008 647.3154)" class="st1 st4">2</text>
+<text transform="matrix(1 0 0 1 1413.2812 614.0156)" class="st1 st5">3</text>
+<rect x="1048" y="578.3" class="st3" width="146.3" height="163.4"/>
+<text transform="matrix(1 0 0 1 1077.6543 647.3154)" class="st1 st4">2</text>
+<text transform="matrix(1 0 0 1 1132.6348 614.0156)" class="st1 st5">4</text>
+<rect x="783.6" y="578.3" class="st3" width="146.3" height="163.4"/>
+<text transform="matrix(1 0 0 1 813.2886 647.3154)" class="st1 st4">2</text>
+<text transform="matrix(1 0 0 1 868.269 614.0156)" class="st1 st5">5</text>
+<rect x="506.2" y="578.3" class="st3" width="146.3" height="163.4"/>
+<text transform="matrix(1 0 0 1 535.8739 647.3154)" class="st1 st4">2</text>
+<text transform="matrix(1 0 0 1 590.8545 614.0156)" class="st1 st5">6</text>
+<rect x="228.8" y="578.3" class="st3" width="146.3" height="163.4"/>
+<text transform="matrix(1 0 0 1 258.4592 647.3154)" class="st1 st4">2</text>
+<text transform="matrix(1 0 0 1 313.4395 614.0156)" class="st1 st5">7</text>
+<path class="st3" d="M2231.2,1255.9c0,65.7-57.9,118.8-129.5,118.8"/>
+<path class="st3" d="M2231.2,1212.1c0,89.9-57.9,162.6-129.5,162.6"/>
+<g>
+	<g>
+		<path class="st6" d="M2013.2,1250.7c20.9,37.8,64.2,102.6,115.8,102.6c73,0,101.7-129.3,101.7-129.3"/>
+		<g>
+			<polygon points="2003.3,1271.5 2016.2,1256.1 2036.2,1254.7 1999.8,1224 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<path class="st6" d="M1730.7,1250.7c20.9,37.8,64.2,102.6,115.8,102.6c73,0,101.7-129.3,101.7-129.3"/>
+		<g>
+			<polygon points="1720.8,1271.5 1733.7,1256.1 1753.8,1254.7 1717.3,1224 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<path class="st6" d="M1425.5,1250.7c20.9,37.8,64.2,102.6,115.8,102.6c73,0,101.7-129.3,101.7-129.3"/>
+		<g>
+			<polygon points="1415.5,1271.5 1428.4,1256.1 1448.5,1254.7 1412,1224 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<path class="st6" d="M1151,1250.7c20.9,37.8,64.2,102.6,115.8,102.6c73,0,101.7-129.3,101.7-129.3"/>
+		<g>
+			<polygon points="1141.1,1271.5 1154,1256.1 1174.1,1254.7 1137.6,1224 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<path class="st6" d="M858.5,1250.7c20.9,37.8,64.2,102.6,115.8,102.6c73,0,101.7-129.3,101.7-129.3"/>
+		<g>
+			<polygon points="848.6,1271.5 861.5,1256.1 881.6,1254.7 845.1,1224 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<path class="st6" d="M592.8,1250.7c20.9,37.8,64.2,102.6,115.8,102.6c73,0,101.7-129.3,101.7-129.3"/>
+		<g>
+			<polygon points="582.9,1271.5 595.8,1256.1 615.9,1254.7 579.4,1224 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<path class="st6" d="M256,1250.7c20.9,37.8,64.2,102.6,115.8,102.6c73,0,101.7-129.3,101.7-129.3"/>
+		<g>
+			<polygon points="246.1,1271.5 259,1256.1 279,1254.7 242.6,1224 			"/>
+		</g>
+	</g>
+</g>
+<rect x="1866.2" y="1377.9" class="st3" width="196" height="168.9"/>
+<text transform="matrix(1 0 0 1 1916.0908 1431.4023)" class="st7 st1 st8">x2</text>
+<rect x="1603.1" y="1377.9" class="st3" width="196" height="168.9"/>
+<text transform="matrix(1 0 0 1 1653.0342 1431.4023)" class="st7 st1 st8">x2</text>
+<rect x="1294.8" y="1377.9" class="st3" width="196" height="168.9"/>
+<text transform="matrix(1 0 0 1 1344.6963 1431.4023)" class="st7 st1 st8">x2</text>
+<rect x="998.3" y="1377.9" class="st3" width="196" height="168.9"/>
+<text transform="matrix(1 0 0 1 1048.2632 1431.4023)" class="st7 st1 st8">x2</text>
+<rect x="734" y="1377.9" class="st3" width="196" height="168.9"/>
+<text transform="matrix(1 0 0 1 783.8975 1431.4023)" class="st7 st1 st8">x2</text>
+<rect x="423.2" y="1377.9" class="st3" width="196" height="168.9"/>
+<text transform="matrix(1 0 0 1 473.1377 1431.4023)" class="st7 st1 st8">x2</text>
+<rect x="473.6" y="538.1" class="st9" width="196.6" height="652.4"/>
+<rect x="746.8" y="538.1" class="st9" width="196.6" height="652.4"/>
+<rect x="2128.1" y="538.1" class="st9" width="196.6" height="652.4"/>
+<g>
+	<g>
+		<line class="st10" x1="571.9" y1="394.8" x2="571.9" y2="495.1"/>
+		<g>
+			<polygon points="557.1,406 571.9,399.7 586.7,406 571.9,370.9 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st10" x1="856.8" y1="394.8" x2="856.8" y2="495.1"/>
+		<g>
+			<polygon points="842,406 856.8,399.7 871.6,406 856.8,370.9 			"/>
+		</g>
+	</g>
+</g>
+<g>
+	<g>
+		<line class="st10" x1="2230.8" y1="394.1" x2="2230.8" y2="494.4"/>
+		<g>
+			<polygon points="2216,405.3 2230.8,399 2245.6,405.3 2230.8,370.2 			"/>
+		</g>
+	</g>
+</g>
+<rect x="168.1" y="157.5" class="st11" width="2275.3" height="193.3"/>
+<rect y="212.6" class="st3" width="2551.2" height="220.4"/>
+<text transform="matrix(1 0 0 1 228.8001 283.9839)" class="st1 st12">2</text>
+<text transform="matrix(0.583 0 0 0.583 281.0316 252.3491)" class="st1 st12">6</text>
+<text transform="matrix(1 0 0 1 311.4827 283.9839)" class="st1 st12">+2</text>
+<text transform="matrix(0.583 0 0 0.583 415.9456 252.3491)" class="st1 st12">5</text>
+<text transform="matrix(1 0 0 1 446.3963 283.9839)" class="st1 st12">+2</text>
+<text transform="matrix(0.583 0 0 0.583 550.8592 252.3491)" class="st1 st12">0 </text>
+<text transform="matrix(1 0 0 1 611.761 283.9839)" class="st1 st12">= 64+32+1 = 97 = Code ASCII de «a» </text>
+</svg>

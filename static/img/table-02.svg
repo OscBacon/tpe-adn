@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 17.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Calque_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="331.177px" height="333px" viewBox="771.2 4.5 331.177 333" enable-background="new 771.2 4.5 331.177 333"
+	 xml:space="preserve">
+<rect x="775.6" y="10.6" fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" width="161.3" height="64.5"/>
+<rect x="936.9" y="10.6" fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" width="161.3" height="64.5"/>
+<rect x="775.6" y="75.2" fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" width="161.3" height="64.5"/>
+<rect x="936.9" y="75.2" fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" width="161.3" height="64.5"/>
+<rect x="775.6" y="139.7" fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" width="161.3" height="64.5"/>
+<rect x="936.9" y="139.7" fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" width="161.3" height="64.5"/>
+<rect x="775.6" y="204.2" fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" width="161.3" height="64.5"/>
+<rect x="936.9" y="204.2" fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" width="161.3" height="64.5"/>
+<rect x="775.6" y="268.8" fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" width="161.3" height="64.5"/>
+<rect x="936.9" y="268.8" fill="none" stroke="#000000" stroke-width="5" stroke-miterlimit="10" width="161.3" height="64.5"/>
+<rect x="771.2" y="29.3" fill="none" width="170" height="27.1"/>
+<text transform="matrix(1 0 0 1 780.6313 46.5942)" fill="#E84326" font-family="'Consolas'" font-size="25">NUCLÉOTIDES</text>
+<rect x="791.2" y="94.6" fill="none" width="130" height="25.7"/>
+<text transform="matrix(1 0 0 1 849.3569 111.8255)" font-family="'Consolas'" font-size="25">A</text>
+<rect x="791.2" y="159.1" fill="none" width="130" height="25.7"/>
+<text transform="matrix(1 0 0 1 849.3569 176.3589)" font-family="'Consolas'" font-size="25">T</text>
+<rect x="791.2" y="223.6" fill="none" width="130" height="25.7"/>
+<text transform="matrix(1 0 0 1 849.3569 240.8924)" font-family="'Consolas'" font-size="25">G</text>
+<rect x="791.2" y="288.2" fill="none" width="130" height="25.7"/>
+<text transform="matrix(1 0 0 1 849.3569 305.4259)" font-family="'Consolas'" font-size="25">C</text>
+<rect x="951.5" y="29.3" fill="none" width="132.2" height="21.8"/>
+<text transform="matrix(1 0 0 1 969.4548 46.5942)" fill="#263686" font-family="'Consolas'" font-size="25">BINAIRE</text>
+<rect x="973.6" y="94.6" fill="none" width="87.9" height="27.6"/>
+<text transform="matrix(1 0 0 1 1003.8186 111.8253)" font-family="'Consolas'" font-size="25">00</text>
+<rect x="973.6" y="158.4" fill="none" width="87.9" height="27.6"/>
+<text transform="matrix(1 0 0 1 1003.8186 175.6612)" font-family="'Consolas'" font-size="25">01</text>
+<rect x="972.3" y="222.7" fill="none" width="90.5" height="27.6"/>
+<text transform="matrix(1 0 0 1 1003.8181 239.9604)" font-family="'Consolas'" font-size="25">10</text>
+<rect x="981.6" y="287.5" fill="none" width="71.9" height="29.3"/>
+<text transform="matrix(1 0 0 1 1003.8185 304.7285)" font-family="'Consolas'" font-size="25">11</text>
+</svg>

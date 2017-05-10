@@ -1,0 +1,56 @@
+@import url(https://fonts.googleapis.com/css?family=Ubuntu);
+.schema {
+  background-color: white;
+  margin: 1em;
+}
+
+::-webkit-scrollbar {
+  background-color: #375a7f;
+}
+
+
+/*::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}*/
+
+::-webkit-scrollbar-thumb {
+  background-color: #28415b;
+}
+
+.custom > li {
+  padding-left: 1.3em;
+  list-style-type: none;
+}
+
+.custom > li:before {
+  content: "\f061";
+  /* FontAwesome Unicode */
+  font-family: FontAwesome;
+  display: inline-block;
+  margin-left: -1.3em;
+  /* same as padding-left set on li */
+  width: 1.3em;
+  /* same as padding-left set on li */
+}
+
+p {
+  text-align: justify !important;
+}
+
+.caption>h3 {
+  text-align: center;
+}
+
+.navbar-collapse {
+  font-size:17px
+}
+
+@font-face {
+    font-family: Lobster;
+    src: url(../fonts/Lobster-Regular.ttf);
+}
+
+@font-face {
+    font-family: Ubuntu;
+    src: url(../fonts/Ubuntu.ttf);
+}

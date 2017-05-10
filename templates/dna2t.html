@@ -1,0 +1,48 @@
+{% extends "template.html" %} {% block body %}
+<div class="section" id="crc">
+	<div class="container">
+		<h1 class="h1">De l’ADN au binaire avec l’utilisation du code correcteur d’erreur</h1>
+		<p>
+			Pour tirer l’information de la molécule d’ADN, nous utilisons un nouveau moyen de séquençage nommé le MinION. C'est un outil portable pour l’analyse des molécules créé par Nanopore Technologies. On peut l’utiliser pour l’analyse
+			de molécules d’ADN, d’ARN et de protéines. Cet outil ressemble à une clé USB qui peut être transportée facilement. De plus, on peut connecter le MinION à un ordinateur via un câble USB.
+		</p>
+		<h2><i>Comment utiliser le MinION?</i></h2>
+		<div class="row">
+			<div class="col-md-8">
+				<p>
+					Dans un premier temps, on insère notre molécule d’ADN dans le MinION. Cet outil contient des protéines qui s’installent sur une membrane créée par des polymères de synthèse et qui possède une résistance électrique très élevée. La protéine, qui est une pore a une forme
+					de tube ayant un contour de quelques nanomètres permettant uniquement à la molécule d’ADN de s'infiltrer dans cette protéine. Lorsque la molécule d’ADN la parcourt, les électrodes envoient alors des courants ioniques, à travers
+					ces pores, et lorsque des nucléotides traversent une pore, le courant s'interrompt. C’est alors que les capteurs enregistrent ces changements. Dans un ordinateur relié à ces pores, un logiciel séquence la molécule d’AN en fonction des différents signaux
+					éléctriques correspondant chacun à un nucléotide.
+				</p>
+			</div>
+			<div class="col-md-4">
+				<div class="embed-responsive embed-responsive-16by9" style="margin-bottom:0.5em">
+					<video class="embed-responsive-item" src="{{ url_for('static', filename='img/seq.mp4') }}" controls></video>
+				</div>
+				<div class="embed-responsive embed-responsive-16by9">
+					<video class="embed-responsive-item" src="{{ url_for('static', filename='img/lecteur.mp4') }}" controls></video>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="section" id="bin">
+	<div class="container">
+		<h1 class="h1">Du binaire à l’ADN</h1>
+		<p>
+			Une fois que le MinION a séquencé la molécule d’ADN, on va pouvoir constater s'il y a eu ou non des mutations. A partir de la séquence <code>P1-P’1-D1-D’1-P2-P’2-D2-D’2-P3-P’3-D3-D’3-P4-P’4-D4-D’4</code>, on peut faire des vérifications logiques. On suppose qu’il
+			ne peut pas y avoir plus d’une erreur par groupe de quatre. À partir de cette hyptohèse, on vérifie que <code>P4</code> est toujours égal à <code>P1 + P2 + P3 modulo 2</code>. En cas d'inégalité on en déduit qu’il y a une mutation dans les bits de parité, et en conséquence il n'y a pas de mutations dans les bits de donnée. Dans l'hypothèse d'un égalité, on procède à la vérification de chaque P pour en déduire le bit de donnée qui a été muté et pour l’intervertir (il n'y a que 2 valeurs, 1 ou 0). A partir de ce code correcteur d’erreur, on a donc limité le
+			nombre d’erreurs et le programme Python nous permet de retrouver la séquence binaire initiale.
+		</p>
+		<p>Pour traduire la séquence binaire en l’information, on se sert du programme Python qui associe chaque octet à une information, à partir de la norme ASCII. Dans le cas de l’information « a », sa séquence binaire est <code>01100001</code> et donc la traduction sera bien l’information « a ».
+		</p>
+		<div class="thumbnail">
+			<img src="{{ url_for('static', filename='img/dna2t.svg') }}" class="img-responsive schema img-thumbnail" style="margin:0" />
+			<div class="caption">
+				<h3>Schéma de la Traduction de la séquence nucléotidique <code>AACGTGGT</code> en une information</h3>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock %}

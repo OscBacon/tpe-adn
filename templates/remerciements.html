@@ -1,0 +1,138 @@
+<html><head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script type="text/javascript" src="{{ url_for('static', filename='js/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/bootstrap.min.js') }}"></script>
+    <link href="{{ url_for('static', filename='css/font-awesome.min.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/prod.css') }}" rel="stylesheet" type="text/css">
+    <link href="{{ url_for('static', filename='css/style.css') }}" rel="stylesheet" type="text/css">
+    <title>Remerciements</title>
+    <style>
+      @media (max-width: 767px) {
+      .navbar-fixed-top {
+          position: relative;
+          top: auto;
+      }
+      .navbar-collapse {
+          max-height: none;
+      }
+      body {
+          margin: 0;
+      }
+  }
+    </style>
+  </head><body>
+    <div class="cover">
+      <div class="navbar navbar-static-top" data-spy="affix" data-offset-top="100">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-ex-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-ex-collapse">
+            <ul class="nav navbar-nav navbar-right h">
+              <li class="active">
+                <a href="/">Accueil<br></a>
+              </li>
+              <li class="">
+                <a href="traduction.html">Traduction<br></a>
+              </li>
+              <li>
+                <a href="sequencage.html">Séquençage<br></a>
+              </li>
+              <li class="">
+                <a href="remerciements.html">Remerciements<br></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="background-image-fixed cover-image" style="background-image: url({{ url_for('static', filename='img/adn.jpg') }})"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 text-center">
+            <h1 id="responsive_headline" style="-webkit-text-stroke: 0.06em black; font-family: sans-serif; font-weight:600;">Remerciements et Bibliographie</h1>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="section">
+       <div class="container">
+         <div class="row">
+           <div class="col-md-12">
+             <ol>
+               <li>http://www.researchgate.net/publication/280068721_Coding_Macromolecules_Inputting_Information_in_Polymers_Using_Monomer-Based_Alphabets </li>
+               <li>http://www.genopole.fr/IMG/pdf/20090512_imagene.pdf </li>
+               <li>http://www.em-consulte.com/en/article/275286
+                 <br>
+               </li>
+               <li>http://hypertextbook.com/facts/1998/StevenChen.shtml</li>
+               <li>https://www.youtube.com/watch?v=a4PiGWNsIEU
+               </li>
+               <li>https://www.youtube.com/watch?v=cBBTWcHkVVY</li>
+               <li>https://www.youtube.com/watch?v=5sskbSvha9M</li>
+               <li>https://en.wikipedia.org/wiki/Forward_error_correction</li>
+               <li>https://www.nanoporetech.com/community/specifications
+               </li>
+               <li>http://stackoverflow.com/questions/19213226/how-to-html-input-to-flask</li>
+               <li>https://www.youtube.com/watch?v=a4PiGWNsIEU
+               </li>
+               <li>https://www.codecogs.com/latex/eqneditor.php
+               </li>
+               <li>http://pharouest.ac-rennes.fr/e350039C/autres%20formats/supports_ecriture.pdf</li>
+               <li>http://www.flashbay.fr/aide/faq/capacite-de-stockage-cle-usb</li>
+               <li>http://www.quechoisir.org/telecom-multimedia/informatique/guide-d-achat-disques-durs-externes-toujours-plus-de-capacite-toujours-plus-de-debit</li>
+               <li>Mention Spéciale pour Jean Francois Lutz</li>
+             </ol>
+           </div>
+         </div>
+       </div>
+     </div>
+     <div class="section">
+       <div class="container">
+         <div class="row">
+           <div class="col-md-12">
+             <h1 class="text-center text-primary">Notre Groupe</h1>
+           </div>
+         </div>
+         <div class="row">
+           <div class="col-md-4">
+             <img src="{{ url_for('static', filename='img/raph.jpg') }}" class="center-block img-circle img-responsive">
+             <h3 class="text-center">Raphael Delouya&nbsp;</h3>
+             <p class="text-center">Designer/Chercheur</p>
+           </div>
+           <div class="col-md-4">
+             <img src="{{ url_for('static', filename='img/oscar.jpg') }}" class="center-block img-circle img-responsive" style="width:360px">
+             <h3 class="text-center">Oscar baracos</h3>
+             <p class="text-center">Chercheur/Codeur</p>
+           </div>
+           <div class="col-md-4">
+             <img src="{{ url_for('static', filename='img/david.jpg') }}" class="center-block img-circle img-responsive">
+             <h3 class="text-center">David Teboul</h3>
+             <p class="text-center" contenteditable="true">Designer/Chercheur</p>
+           </div>
+         </div>
+       </div>
+     </div>
+     <footer class="section section-primary ">
+       <div class="background-image" style="background-image : url('{{ url_for('static', filename='img/foot.jpg') }}')"></div>
+       <div class="container ">
+         <div class="row ">
+           <div class="col-sm-12">
+             <h1>A propos...</h1>
+             <p>Ce TPE a été réalisé par Oscar Baracos, Raphaël Delouya et David Teboul
+               <br>
+             </p>
+           </div>
+         </div>
+       </div>
+     </footer>
+
+
+   </body>
+
+   </html>

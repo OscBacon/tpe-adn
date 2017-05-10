@@ -1,0 +1,47 @@
+{% extends "template.html" %} {% block body %}
+<div class="section" id="infos">
+	<div class="container">
+		<img src="{{ url_for('static', filename='img/lutz.jpg') }}" style="margin: 0.5em;" class="img-responsive pull-right img-thumbnail">
+		<h1 class="h1">Informations sur Jean-François Lutz</h1>
+		<p class="text-justify">
+			Jean François Lutz est un directeur de la recherche au CNRS, il est également le député directeur de l’Institut Charles Sadron, et le chef du groupe de la Précision des Macromolécules en Chimie. Ses recherches s’orientent vers la synthèse des séquences
+			contrôlées des polymères.
+		</p>
+	</div>
+</div>
+<div class="section" id="entretien">
+	<div class="container">
+		<h1 class="h1">Entretien</h1>
+		<p>
+			Dans ses recherches, Jean François Lutz n’utilise pas la molécule d’ADN artificielle pour stocker l’information mais des polymères de synthèse. Cependant, le moyen de fonctionnement pour stocker l’information reste identique.
+		</p>
+		<p> Jean François Lutz nous a indiqué qu’il était préférable de stocker de la molécule d’ADN dans du verre. Si l’on stocke l’ADN dans un matériel liquide ou gélatineux, la molécule va bouger et il peut y avoir un mouvement chimique qui dégradera la molécule
+			d’ADN. L’intérêt de stocker la molécule d’ADN dans un solide est le temps car la longueur de sa conservation peut-être de plusieurs millions d’années.
+		</p>
+		<p> Jean François Lutz nous a certifié que la molécule d’ADN pouvait contenir plus de données qu’un support de stockage normal. Par exemple, le disque dur descend à l’échelle des nanomètres et la molécule d’ADN descend à l’échelle de l'Angstrom. Nous faisons
+			donc un énorme gain d’espace avec la molécule d’ADN.
+		</p>
+		<p> De plus, nous lui avons demandé s’il y avait des possibilités pour que la molécule d’ADN se replie sur elle même afin de gagner de l’espace. Il nous a répondu qu’il existe des protéines histones qui enroulent les filaments pour prendre le moins de place
+			possible. Mais pour l’instant, cela reste dans le domaine de la science-fiction car ce n’est pas très maîtrisé. La possibilité de travailler avec des histones naturelles est restreinte car cela coûte très cher.
+		</p>
+		<p> Enfin, Jean François Lutz a souligné que les recherches quotidiennes sur le stockage de données dans des polymères de synthèse sont très récentes et pas assez précises pour être utilisées dans l’immédiat. Par exemple, la clé USB est le fruit de 40 ans de
+			recherches et les recherches sur le stockage d’information dans l’ADN n’existent que depuis quelques années. Pour l’instant, ce n’est pas une science exacte mais une science artificielle.
+
+		</p>
+	</div>
+</div>
+<div class="section" id="synthèse">
+	<div class="container">
+		<h1 class="h1">
+				Synthèse des informations importantes de l’entretien
+			</h1>
+		<ul class="list-group">
+			<li class="list-group-item">Utilisation de polymère de synthèses pour stocker l’information = utilisation de la molécule d’ADN pour stocker l'information</li>
+			<li class="list-group-item">Stocker la molécule d’ADN dans du verre</li>
+			<li class="list-group-item">Molécule d’ADN peut stocker plus de données que les supports de stockage normaux</li>
+			<li class="list-group-item">Repliement de la molécule d’ADN compliquée à effectuer</li>
+			<li class="list-group-item">Outil de stockage trop expérimental pour être utilisé</li>
+		</ul>
+	</div>
+</div>
+{% endblock %}
