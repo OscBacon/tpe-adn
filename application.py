@@ -75,4 +75,4 @@ def dna2t_src():
     return render_template('dna2t_src.html', source=True, title="Code de conversion d'ADN vers texte")
 
 if __name__ == '__main__':
-    app.run(port = int(os.environ.get('PORT', 33507)))
+    app.run(host='0.0.0.0', port=int(os.environ.get('PORT', 33507)))
